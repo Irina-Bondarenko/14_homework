@@ -3,6 +3,7 @@
 // HOMEWORK #14
 
 let num = +prompt("Введите число");
+let simpleTrue = false;
 
 if (isNaN(num)) {
   alert("Вы ввели не число");
@@ -13,13 +14,14 @@ if (isNaN(num)) {
 } else if (num > 0) {
   for (let simple = 2; simple < num; simple++) {
     if (num % simple === 0) {
-      console.log(false);
       break;
     } else {
-      console.log(true);
+      simpleTrue = true;
     }
   }
+  console.log(simpleTrue);
 
 } else {
   alert("Жаль, что Вы не ввели число");
 }
+
